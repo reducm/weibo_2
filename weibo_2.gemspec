@@ -18,8 +18,8 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency "rspec"
 
-  gem.add_runtime_dependency 'oauth2', "~> 0.9.1"
+  gem.add_runtime_dependency 'oauth2'
   gem.add_runtime_dependency 'hashie'
-  gem.add_runtime_dependency 'multi_json'  , "~> 1"
+  gem.add_runtime_dependency 'multi_json'
   gem.add_runtime_dependency 'rest-client'
 end
