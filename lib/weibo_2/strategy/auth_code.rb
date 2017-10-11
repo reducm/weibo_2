@@ -4,7 +4,7 @@ module WeiboOAuth2
       def get_token(code, params={}, opts={})
         params = {'grant_type' => 'authorization_code', 
                   'code' => code, 
-                  'redirect_uri' => WeiboOAuth2::Config.redirect_uri.to_s}..merge(params)
+                  'redirect_uri' => WeiboOAuth2::Config.redirect_uri.to_s}.merge(params)
         @client.get_and_restore_token(params, opts)
       end
     end
